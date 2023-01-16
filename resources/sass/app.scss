@@ -1,1 +1,63 @@
-//
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+
+    padding-bottom: 20px;
+}
+
+body{
+
+    background-color: #292A2D;
+}
+
+.cont-card{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 60px;
+    gap: 20px;
+
+    .card-film{
+
+        width: calc(100% / 5 - 40px);
+        aspect-ratio: 2/3;
+        background: rgb(0,0,0);
+        background: radial-gradient(circle, rgba(0,0,0,1) 88%, rgba(253,83,45,1) 100%);
+        border-radius: 10px;
+        color: white;
+        padding: 15px;
+        border: 1px solid rgb(163, 19, 19);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h2{
+
+            padding-bottom: 25px;
+        }
+
+        h3,h4{
+
+            color: #bfbebe;
+            margin-bottom: 20px;
+        }
+
+        .voto{
+
+            color: rgb(222, 222, 56);
+        }
+    }
+
+
+}

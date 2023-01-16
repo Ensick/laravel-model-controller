@@ -4,6 +4,17 @@
 
 @section('main-content')
 
-    <h1>tutti i miei films del db</h1>
+    <div class="cont-card">
+        
+        @foreach($movies as $elem)
+            <div class="card-film">
+                <h2>{{$elem['title']}}</h2>
+                <h3>{{$elem['nationality']}}</h3>
+                <h4>{{$elem['date']}}</h4>
+                <h3 class="voto">{{$elem['vote']}}</h3>
+            </div>
+        @endforeach
+    </div>
+   
 
 @endsection
